@@ -127,7 +127,7 @@ void edu_heap_sort(void *ptr, size_t count, size_t size, edu_cmp cmp) {
 
 
 void edu_counting_sort(void *ptr, size_t count, size_t size, edu_counting_sort_order_e order) {
-    if (size != sizeof(int)) return; // поддерживаем только int
+    if (size != sizeof(int)) return; 
     int *arr = (int *)ptr;
     int min = arr[0], max = arr[0];
     for (size_t i = 1; i < count; i++) {
